@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-import { Alert } from "@brainandbones/skeleton";
+//import { Alert } from "@brainandbones/skeleton";
 
 let visible: boolean = true;
 ---
@@ -9,7 +9,6 @@ let visible: boolean = true;
 <Layout title="Welcome to Astro.">
   <main>
     <!-- <Alert {visible} client:visible> -->
-    <Alert {visible} />
     <svelte:fragment slot="title">test alert title</svelte:fragment>
     <span>test message</span>
     <svelte:fragment slot="trail">(trail)</svelte:fragment>
